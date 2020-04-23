@@ -1,3 +1,4 @@
+
 {{ if ne .Params.showpagemeta false }}
 <div class="post__meta">
     <!-- published date -->
@@ -32,3 +33,4 @@
     <i class="fas fa-clock"></i> {{ .ReadingTime }} min read
 </div>
 {{ end }}
+{{ partial "page-single/share-buttons.html" . }}

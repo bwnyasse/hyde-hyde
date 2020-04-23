@@ -11,6 +11,7 @@
     {{ $.Scratch.Add "theTitle" " • "}}
     {{ $.Scratch.Add "theTitle" .Site.Title}}
 {{ end }}
+{{ partial "header/seo_schema.html" . }}
 <title>{{ $.Scratch.Get "theTitle" }}</title>
 {{ with .Site.Params.meta.description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ with .Site.Params.meta.keywords }}<meta name="keywords" content="{{.}}">{{ end }}
