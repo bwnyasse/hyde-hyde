@@ -39,6 +39,7 @@
   }
 }
 .site__title {
+  display: none;
   font-size: $site__title-font-size;
   margin-bottom: 0.5rem;
   a:hover {
@@ -64,8 +65,8 @@
 }
 
 .img--headshot {
-	height: 115px;
-	width: 115px;
+	height: 156px;
+	width: 156px;
 }
 
 .img--caption {
