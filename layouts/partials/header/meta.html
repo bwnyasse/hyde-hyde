@@ -16,4 +16,10 @@
 {{ with .Site.Params.meta.description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ with .Site.Params.meta.keywords }}<meta name="keywords" content="{{.}}">{{ end }}
 {{ template "_internal/twitter_cards.html" . }}
+{{ if .Params.thumbnail }}
+<meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
+{{ end }}
 {{ template "_internal/opengraph.html" . }}
+{{ if .Params.thumbnail }}
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
+{{ end }}
