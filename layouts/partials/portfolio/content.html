@@ -4,6 +4,7 @@
         <section class="portfolio__featured-project">
             <div class="section-inner">
                 <div class="portfolio_content">
+                     <span id="{{ .Params.anchor }}"></span>
                     <div class="item featured text-center">
                         <span class="project__title">
                             <a href="{{ .Params.Link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
@@ -33,6 +34,7 @@
                     target="_blank" rel="noopener noreferrer">
                     <img class="project__image img-responsive" src="{{ .Params.screenshot }}" alt="{{ .Title }}">
                 </div>
+                <span id="{{ .Params.anchor }}"></span>
                 <div class="col-md-8 col-sm-8 col-xs-12">
                     <span class="project__title">
                         <a href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
